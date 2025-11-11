@@ -72,6 +72,7 @@ rustPlatform.buildRustPackage (_finalAttrs: {
     llvm
     expat
     makeBinaryWrapper
+    llvmPackages.libclang
   ];
 
   runtimeLibs = [
