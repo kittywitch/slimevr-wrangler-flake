@@ -29,5 +29,7 @@
         inherit slimevr-wrangler;
         default = slimevr-wrangler;
       });
+
+      overlays.default = ./overlay.nix;
     };
 }
