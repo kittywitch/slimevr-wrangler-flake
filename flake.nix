@@ -16,12 +16,6 @@
       inherit system;
     };
   in {
-      devShells = forAllSystems (system: let
-        pkgs = pkgs' system;
-      in {
-        default = import ./shell.nix {inherit pkgs;};
-      });
-
       packages = forAllSystems (system: let
         pkgs = pkgs' system;
         slimevr-wrangler = pkgs.callPackage ./package.nix { inherit slimevr-wrangler-src; };
@@ -30,6 +24,6 @@
         default = slimevr-wrangler;
       });
 
-      overlays.default = ./overlay.nix;
+      overlays.default = import ./overlay.nix;
     };
 }
