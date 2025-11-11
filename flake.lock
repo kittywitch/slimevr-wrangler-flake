@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1762482733,
+        "narHash": "sha256-g/da4FzvckvbiZT075Sb1/YDNDr+tGQgh4N8i5ceYMg=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e1ebeec86b771e9d387dd02d82ffdc77ac753abc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "slimevr-wrangler-src": "slimevr-wrangler-src"
+      }
+    },
+    "slimevr-wrangler-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1739406050,
+        "narHash": "sha256-WAawquYowpv5kWYI295vy3mQX/45aVC0ntqnsmr8CTw=",
+        "owner": "carl-anders",
+        "repo": "slimevr-wrangler",
+        "rev": "208f90768505c1c9e7bb670df27568df7a251e54",
+        "type": "github"
+      },
+      "original": {
+        "owner": "carl-anders",
+        "ref": "main",
+        "repo": "slimevr-wrangler",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
