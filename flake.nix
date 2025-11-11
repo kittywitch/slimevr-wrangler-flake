@@ -24,6 +24,6 @@
         default = slimevr-wrangler;
       });
 
-      overlays.default = import ./overlay.nix;
+      overlays.default = import ./overlay.nix { inherit slimevr-wrangler-src; };
     };
 }
