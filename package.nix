@@ -30,7 +30,7 @@
 }:
 rustPlatform.buildRustPackage (_finalAttrs: {
   pname = "slimevr-wrangler";
-  version = "0.1.0";
+  version = "0.11.0";
 
   src = slimevr-wrangler-src.outPath;
 
