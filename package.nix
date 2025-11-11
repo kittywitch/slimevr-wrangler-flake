@@ -83,6 +83,7 @@ rustPlatform.buildRustPackage (_finalAttrs: {
     xorg.libXcursor
     xorg.libXi
     xorg.libXrandr
+    llvmPackages.libclang
   ];
 
   postInstall = ''
