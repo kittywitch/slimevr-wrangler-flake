@@ -87,7 +87,7 @@ rustPlatform.buildRustPackage (_finalAttrs: {
 
   postInstall = ''
     wrapProgram $out/bin/slimevr-wrangler \
-      --set LD_LIBRARY_PATH "${lib.makeLibraryPath _finalAttrs.runtimeLibs}"
+      --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath _finalAttrs.runtimeLibs}"
   '';
 
   VK_LAYER_PATH = "${vulkan-validation-layers}/share/vulkan/explicit_layer.d";
