@@ -4,8 +4,8 @@ let
     url = "https://github.com/edolstra/flake-compat/archive/${lock.nodes.flake-compat.locked.rev}.tar.gz";
     sha256 = lock.nodes.flake-compat.locked.narHash;
   };
-  fzfdapter = import flakeCompat {
+  slimevr-wrangler = import flakeCompat {
     src = ./.;
   };
 in
-  fzfdapter.defaultNix
+  slimevr-wrangler.defaultNix
